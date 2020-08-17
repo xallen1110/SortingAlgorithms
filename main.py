@@ -1,4 +1,11 @@
-from sort_algorithms_pkg.sorter import Sorter
+from sort_algorithms_pkg.bubble_sorter import BubbleSorter
 
 if __name__ == '__main__':
-    pass
+    input_list = [14, 21, 3, 9, 15, 10, 15, 20, 6]
+    expected_list = [3, 6, 9, 10, 14, 15, 15, 20, 21]
+
+    list_for_bubble_sort = list(input_list)
+    bubble_sorter = BubbleSorter()
+    bubble_sorter.sort(list_for_bubble_sort)
+    print("Result of Bubble Sort: " + str(list_for_bubble_sort))
+    print("Is sorted result expected? " + str(expected_list == list_for_bubble_sort))
