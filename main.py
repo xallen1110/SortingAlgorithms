@@ -1,4 +1,5 @@
 from sort_algorithms_pkg.bubble_sorter import BubbleSorter
+from sort_algorithms_pkg.selection_sorter import SelectionSorter
 
 if __name__ == '__main__':
     input_list = [14, 21, 3, 9, 15, 10, 15, 20, 6]
@@ -9,3 +10,9 @@ if __name__ == '__main__':
     bubble_sorter.sort(list_for_bubble_sort)
     print("Result of Bubble Sort: " + str(list_for_bubble_sort))
     print("Is sorted result expected? " + str(expected_list == list_for_bubble_sort))
+
+    list_for_selection_sort = list(input_list)
+    selection_sorter = SelectionSorter()
+    selection_sorter.sort(list_for_selection_sort)
+    print("Result of Selection Sort: " + str(list_for_selection_sort))
+    print("Is sorted result expected? " + str(expected_list == list_for_selection_sort))
