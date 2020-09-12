@@ -1,4 +1,4 @@
-from sort_algorithms_pkg.sorter import Sorter
+from xallen1110.sorter.sorter import Sorter
 
 class SelectionSorter(Sorter):
 
