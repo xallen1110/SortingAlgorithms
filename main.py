@@ -1,5 +1,5 @@
-from sort_algorithms_pkg.bubble_sorter import BubbleSorter
-from sort_algorithms_pkg.selection_sorter import SelectionSorter
+from xallen1110.sorter.bubble_sorter import BubbleSorter
+from xallen1110.sorter.selection_sorter import SelectionSorter
 
 if __name__ == '__main__':
     input_list = [14, 21, 3, 9, 15, 10, 15, 20, 6]
