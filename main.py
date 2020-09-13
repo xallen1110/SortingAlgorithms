@@ -1,4 +1,5 @@
 from xallen1110.sorter.bubble_sorter import BubbleSorter
+from xallen1110.sorter.insertion_sorter import InsertionSorter
 from xallen1110.sorter.selection_sorter import SelectionSorter
 
 if __name__ == '__main__':
@@ -16,3 +17,9 @@ if __name__ == '__main__':
     selection_sorter.sort(list_for_selection_sort)
     print("Result of Selection Sort: " + str(list_for_selection_sort))
     print("Is sorted result expected? " + str(expected_list == list_for_selection_sort))
+
+    list_for_insertion_sort = list(input_list)
+    insertion_sorter = InsertionSorter()
+    insertion_sorter.sort(list_for_insertion_sort)
+    print("Result of Insertion Sort: " + str(list_for_insertion_sort))
+    print("Is sorted result expected? " + str(expected_list == list_for_insertion_sort))
